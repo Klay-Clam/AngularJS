@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>创建自定义的指令</title>
+</head>
+<body ng-app="myApp">
+<klay-clam></klay-clam>
+
+
+<script>
+    var app = angular.module("myApp",[]);
+    app.directive("klayClam",function () {
+        return {
+            template : "<h1>自定义的指令</h1>"
+        };
+    });
+</script>
+
+<script type="text/javascript" src="vendor/jquery-2.2.2.min.js"></script>
+<script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="vendor/angular/angular.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>数据绑定-循环输出元素</title>
+</head>
+<body  ng-app="myApp">
+<!--
+<div ng-init="name=['Jani','Hege','kai']">
+    <p>使用 ng-repeat 来循环数组</p>
+    <ul>
+        <li ng-repeat="x in name">
+            {{x}}
+    </ul>
+</div>
+
+<div ng-init="names=[
+        {name:'Jani',country:'Norway'},
+        {name:'Hege',country:'Sweden'},
+        {name:'Kai',country:'Denmark'},
+        ]">
+    <p>循环对象：</p>
+    <ul>
+        <li ng-repeat="x in names">
+            {{x.name + "  " + x.country}}
+        </li>
+    </ul>
+</div>-->
+
+<!--创建自定义的指令-->
+
+    <runoob></runoob>
+
+<script>
+    var app = angular.module("myApp",[]);
+    app.directive("runoob",function () {
+        return {
+            template : "<h1>自定义指令</h1>"
+        };
+    });
+</script>
+
+
+
+<script type="text/javascript" src="../../vendor/jquery-2.2.2.min.js"></script>
+<script type="text/javascript" src="../../vendor/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../vendor/angular/angular.min.js"></script>
+<script>
+    //js的表达式
+
+</script>
+</body>
+</html>

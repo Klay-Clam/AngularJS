@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>过滤器</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+</head>
+<body>
+<p>
+    <h2>用于转换数据格式</h2><br>
+    currency--格式化数字为货币格式<br>
+    filter--格式化数字为选择中的一个子集<br>
+    lowercase--格式化字符串为小写<br>
+    orderBy--根据某个表达式排列数组<br>
+    uppercase--格式化字符串为大写<br>
+</p>
+
+<h2>currency 过滤器</h2>
+<div ng-app="myApp">
+    <div ng-controller="firstController">
+        <h2>数字格式化</h2>
+        <p>{{123456789 | number}}</p>
+        <p>{{123456.789 | number:3}}</p>
+        <h2>货币</h2>
+        <p>{{99999 | currency}}</p>
+        <p>{{99999 | currency:'￥'}}</p>
+        <h2>日期</h2>
+        <p>
+            <!--"2017-02-23T10:38:04.720Z"-->
+            {{theDay}}
+        </p>
+        <p>
+            <!--Feb 23, 2017-->
+            date:{{theDay | date}}
+        </p>
+        <p>
+            <!--Feb 23, 2017 6:40:47 PM-->
+            date:'medium':{{theDay | date:'medium'}}
+        </p>
+        <p>
+            <!--:2/23/17 6:57 PM-->
+            date:'short':{{theDay | date:'short'}}
+        </p>
+        <p>
+            <!--Thursday, February 23, 2017-->
+            date:'fullDate':{{theDay | date:'fullDate'}}
+        </p>
+        <p>
+            <!--February 23, 2017-->
+            date:'longDate':{{theDay | date:'longDate'}}
+        </p>
+        <p>
+            <!--2/23/17-->
+            date:'shortDate':{{theDay | date:'shortDate'}}
+        </p>
+        <p>
+            <!--6:57:29 PM-->
+            date:'mediumTime':{{theDay | date:'mediumTime'}}
+        </p>
+        <p>
+            <!--6:57 PM-->
+            date:'shortTime':{{theDay | date:'shortTime'}}
+        </p>
+        <h3>年 的样式</h3>
+        <p>
+            {{theDay | date:'y'}}
+        </p>
+        <p>
+            {{theDay | date:'yy'}}
+        </p>
+        <p>
+            {{theDay | date:'yyyy'}}
+        </p>
+        <h3>month月 的样式</h3>
+        <p>
+            {{theDay | date:'m'}}
+        </p>
+        <p>
+            {{theDay | date:'mm'}}
+        </p>
+        h3>day日 的样式</h3>
+        <p>
+            {{theDay | date:'d'}}
+        </p>
+        <p>
+            {{theDay | date:'dd'}}
+        </p>
+        <p>
+            {{theDay | date:'EEEE'}}
+        </p>
+        <p>
+            {{theDay | date:'EEE'}}
+        </p>
+        <p>
+            hour:
+            {{theDay | date : 'HH'}}
+            {{theDay | date : 'H'}}
+            {{theDay | date : 'h'}}
+        </p>
+        <p>
+            {{theDay | date : 'y-MM-d H:m:s'}}
+        </p>
+    </div>
+</div>
+
+<script type="text/javascript" src="../../vendor/angular/angular.js"></script>
+<script type="text/javascript" src="../../vendor/jquery-2.2.2.min.js"></script>
+<script type="text/javascript" src="../../vendor/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="app/filter%20date.js"></script>
+</body>
+</html>

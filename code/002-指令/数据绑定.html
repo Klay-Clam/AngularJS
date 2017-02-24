@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>数据绑定-价格计算器</title>
+</head>
+<body >
+
+    <div ng-app="" ng-init="quantity=1;price=5">
+        <h2>价格计算器</h2>
+
+        数量：<input type="text" ng-model="quantity" value="0">
+        单价：<input type="text" ng-model="price" value="0">        <!--数据是双向绑定的-->
+
+
+        <!--angular的表达式-->
+        总价：{{quantity*price}}
+    </div>
+
+    <script type="text/javascript" src="../../vendor/jquery-2.2.2.min.js"></script>
+    <script type="text/javascript" src="../../vendor/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../vendor/angular/angular.min.js"></script>
+    <script>
+        //js的表达式
+
+    </script>
+</body>
+</html>

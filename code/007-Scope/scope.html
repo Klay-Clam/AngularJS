@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <title>AngularJS Scope 作用域</title>
+</head>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+    <input ng-model="name">
+    <h1>{{greeting}}</h1>
+    <button ng-click="sayHello()">点我</button>
+</div>
+
+<script>
+    var app = angular.module('myApp', []);
+    app.controller('myCtrl', function($scope) {
+        $scope.name = "胡勇";
+        $scope.sayHello = function() {
+            $scope.greeting = 'Hello' + "  " +$scope.name + '!';
+        };
+    });
+</script>
+<script type="text/javascript" src="../../vendor/jquery-2.2.2.min.js"></script>
+<script type="text/javascript" src="../../vendor/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../vendor/angular/angular.min.js"></script>
+</body>
+</html>

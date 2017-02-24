@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>AngularJS ng-module 模型</title>
+</head>
+<body>
+<!--
+    ng-module 指令可以将输入域的值与AngularJS创建的变量绑定
+-->
+<form ng-app="" name="myApp">
+    Email:
+    <input type="email" name="myAddress" ng-model="text">
+    <span ng-show="myApp.myAddress.$error.email">不是一个合法的邮箱地址</span>
+</form>
+
+
+<script type="text/javascript" src="vendor/jquery-2.2.2.min.js"></script>
+<script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="vendor/angular/angular.min.js"></script>
+</body>
+</html>

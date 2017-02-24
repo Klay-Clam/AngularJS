@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJs应用</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <script type="text/javascript" src="../../vendor/angular/angular.js"></script>
+</head>
+<body>
+<!--AngularJs模块（Module）定义了AngularJS应用
+    AngularJS控制器（Controller）用于控制AngularJS应用。
+    ng-app指令定义了应用，ng-controller定义了控制器
+-->
+    <div ng-app="myApp" ng-controller="myCtrl">
+        名：<input type="text" ng-model="firstName"><br>
+        姓：<input type="text" ng-model="lastName"><br>
+
+        姓名：{{firstName + " " + lastName}}
+    </div>
+<script>
+    var app = angular.module('myApp',[]);
+    app.controller('myCtrl',function ($scope) {
+        $scope.firstName = "John";
+        $scope.lastName = "Doe";
+    });
+</script>
+
+<script type="text/javascript" src="../../vendor/jquery-2.2.2.min.js"></script>
+<script type="text/javascript" src="../../vendor/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../vendor/angular/angular.min.js"></script>
+</body>
+</html>
