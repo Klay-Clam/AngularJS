@@ -31,7 +31,19 @@ var app = angular.module('myApp',[])
             restrict:"E",
             replace:true,
             template: '<div class="panel-group" ng-transclude></div>',
-            transclude:true
+            transclude:true,
+            controllerAs: 'kittencupGroupController',
+            controller:function () {
+                this.groups = [];
+
+                this.closeOtherCollapse = function (nowScope) {
+                    angular.forEach(this.groups,function (scope) {
+                        if(scope !== nowScope){
+                            scope.isOpen = false;
+                        }
+                    })
+                }
+            }
         }
     })
 
@@ -39,12 +51,20 @@ var app = angular.module('myApp',[])
         return {
             restrict:'E',
             replace:true,
+            require: '^kittencupGroup',
             templateUrl:'tmp/kittencupCollapse.html',
             scope:{
                 heading:'@'
             },
-            controller:function ($scope) {
-                $scope.isOpen = true;
+            link:function (scope,element,attrs,kittencupGroupController) {
+                scope.isOpen = false;
+
+                scope.changeOpen = function(){
+                    scope.isOpen = !scope.isOpen;
+                    kittencupGroupController.closeOtherCollapse(scope);
+                };
+
+                kittencupGroupController.groups.push(scope);
             },
             transclude:true
         }
