@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单 Form Text</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+</head>
+<body>
+<div ng-app="myApp">
+    <form name="myForm" class="container" ng-controller="firstController">
+        <div class="form-group" ng-class="{'has-error':myForm.username.$dirty && myForm.username.$invalid}" >
+            <label class="col-sm-2 control-label" for="username">用户名</label>
+            <div class="col-sm-10" id="username">
+                <input type="text"
+                       name="username"
+                       class="form-control"
+                       ng-minlength="6"
+                       ng-maxlength="20"
+                       ng-required="true"
+                       ng-model="data.username"
+                       autocomplete="off"
+                       ng-pattern="/^[a-zA-Z]{1}/"
+                       placeholder="Enter username">
+                <div ng-show="myForm.username.$error.maxlength" class="alert alert-danger help-block">
+                    用户名长度不能超过20位
+                </div>
+                <div ng-show="myForm.username.$error.minlength" class="alert alert-danger help-block">
+                    用户名长度不能小于6位
+                </div>
+                <div ng-show="myForm.username.$error.pattern" class="alert alert-danger help-block">
+                    用户名必须以英文字母开头
+                </div>
+            </div>
+        </div>
+    </form>
+
+</div>
+
+<script type="text/javascript" src="../../vendor/angular/angular.js"></script>
+<script type="text/javascript" src="../../vendor/jquery-2.2.2.min.js"></script>
+<script type="text/javascript" src="../../vendor/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="app/showController.js"></script>
+</body>
+</html>
