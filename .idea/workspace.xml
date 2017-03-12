@@ -20,21 +20,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="showController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/029-form表单 Radio Checkbox Number/app/showController.js">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/030-form表单 select 城市三级关联/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="252">
+              <caret line="81" column="18" lean-forward="true" selection-start-line="81" selection-start-column="18" selection-end-line="81" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/code/029-form表单 Radio Checkbox Number/index.html">
+      <file leaf-file-name="showController.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/code/030-form表单 select 城市三级关联/app/showController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="71" column="26" lean-forward="false" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
+            <state relative-caret-position="318">
+              <caret line="115" column="37" lean-forward="false" selection-start-line="115" selection-start-column="37" selection-end-line="115" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -58,8 +58,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/code/008-过滤器/index.js" />
-        <option value="$PROJECT_DIR$/code/008-过滤器/app/filter.js" />
         <option value="$PROJECT_DIR$/code/008-过滤器/008-filter.html" />
         <option value="$PROJECT_DIR$/code/008-过滤器/008-filter date.html" />
         <option value="$PROJECT_DIR$/code/008-过滤器/008-filter 过滤条件.html" />
@@ -109,6 +107,8 @@
         <option value="$PROJECT_DIR$/code/028-form表单 password url email/index.html" />
         <option value="$PROJECT_DIR$/code/029-form表单 Radio Checkbox Number/app/showController.js" />
         <option value="$PROJECT_DIR$/code/029-form表单 Radio Checkbox Number/index.html" />
+        <option value="$PROJECT_DIR$/code/030-form表单 select 城市三级关联/index.html" />
+        <option value="$PROJECT_DIR$/code/030-form表单 select 城市三级关联/app/showController.js" />
       </list>
     </option>
   </component>
@@ -182,7 +182,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="029-form表单 Radio Checkbox Number" />
+              <option name="myItemId" value="030-form表单 select 城市三级关联" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -200,7 +200,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="029-form表单 Radio Checkbox Number" />
+              <option name="myItemId" value="030-form表单 select 城市三级关联" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -340,12 +340,12 @@
       <workItem from="1488770968208" duration="152000" />
       <workItem from="1489216060987" duration="676000" />
       <workItem from="1489216827934" duration="8560000" />
-      <workItem from="1489282222631" duration="3769000" />
+      <workItem from="1489282222631" duration="8183000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144918000" />
+    <option name="totallyTimeSpent" value="149332000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1965" y="453" width="1321" height="747" extended-state="6" />
@@ -391,20 +391,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/code/014-多个控制器之间共享数据/app/provider.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="10" lean-forward="false" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/008-过滤器/008-filter date.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="41" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/008-过滤器/008-filter 过滤条件.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -670,6 +656,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
           <caret line="33" column="14" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="33" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -688,14 +675,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/029-form表单 Radio Checkbox Number/app/showController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/angular/angular.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="588">
@@ -704,10 +683,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/code/029-form表单 Radio Checkbox Number/app/showController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/code/029-form表单 Radio Checkbox Number/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="71" column="26" lean-forward="false" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
+        <state relative-caret-position="219">
+          <caret line="53" column="24" lean-forward="true" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/030-form表单 select 城市三级关联/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="81" column="18" lean-forward="true" selection-start-line="81" selection-start-column="18" selection-end-line="81" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/030-form表单 select 城市三级关联/app/showController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="115" column="37" lean-forward="false" selection-start-line="115" selection-start-column="37" selection-end-line="115" selection-end-column="37" />
           <folding />
         </state>
       </provider>
